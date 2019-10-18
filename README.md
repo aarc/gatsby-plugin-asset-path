@@ -149,4 +149,43 @@ Additional paths to files/folders that should be moved to the asset directory.
     },
   ];
 }
+
+### directories
+
+Default: `["static", "icons", "page-data"]`
+
+The directories to move to the asset directory.
+
+```javascript
+// Your gatsby-config.js
+{
+  plugins: [
+    {
+      resolve: "gatsby-plugin-asset-path",
+      options: {
+        directories: ["static"],
+      },
+    },
+  ];
+}
+```
+
+### fileTypes
+
+Default: `["js", "css"]`
+
+The types of files in the root publicFolder to move to the asset directory.
+
+```javascript
+// Your gatsby-config.js
+{
+  plugins: [
+    {
+      resolve: "gatsby-plugin-asset-path",
+      options: {
+        directories: ['js', 'map', 'css'],
+      },
+    },
+  ];
+}
 ```
